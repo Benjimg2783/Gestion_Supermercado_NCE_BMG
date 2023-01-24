@@ -86,5 +86,10 @@ public class Empleado extends Persona {
                 ", sueldo = " + sueldo +
                 ", idEmpleado = " + idEmpleado;
     }
+
+    //Método mediante el cual el empleado puedo cambiar el precio de venta de un producto
+    public void cambiarPrecioDeVenta(Producto producto, Double precio) {producto.setPrecioVenta(precio);}
+
+
 }
 

@@ -8,6 +8,8 @@ class Producto {
     // Atributo para almacenar el precio de venta del producto
     private double precioVenta;
 
+
+
     // Constructor que inicializa los atributos del producto
     public Producto(String nombre, double precioCosto, double precioVenta) {
         // Asignando los valores pasados como parámetros a los atributos correspondientes

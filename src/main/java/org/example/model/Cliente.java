@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.interfaces.Descuento;
+
 import java.util.List;
 
 public class Cliente extends Persona {
@@ -75,5 +77,20 @@ public class Cliente extends Persona {
         }
         if (count>this.listaCompra.size()) System.out.println("elemento no encontrado");
         else this.listaCompra.remove(count);
+    }
+
+    /**método mediante el cual un cliente raliza un pedido
+     * @param descuento descuento aplicable
+     *
+     * @param empleado empleado mediante el cual se efectúa el pedido
+     *
+     * @return el pedido
+     * **/
+    public Pedido realizarPedido(Empleado empleado, Descuento descuento){
+        if (descuento==null){
+            return new  Pedido(this,empleado,listaCompra);
+        } else {
+            return new Pedido(this, empleado, listaCompra, descuento);
+        }
     }
 }

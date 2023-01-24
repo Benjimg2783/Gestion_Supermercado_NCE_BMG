@@ -16,7 +16,7 @@ abstract class DescuentoPorCategoria implements Descuento {
 
     // Método para calcular el descuento aplicado a un producto o pedido
     @Override
-    public double calcularDescuento(double monto) {
+    public double aplicarDescuento(double monto) {
         // Aplicando el descuento del porcentaje especificado
         return monto - (monto * porcentajeDescuento / 100);
     }

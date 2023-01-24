@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.interfaces.Descuento;
+
 import java.util.List;
 
 public class ClienteAfiliado extends Cliente {
@@ -67,5 +69,13 @@ public class ClienteAfiliado extends Cliente {
         } else {
             return 0;
         }
+    }
+
+
+    @Override
+    public Pedido realizarPedido(Empleado empleado, Descuento descuento){
+        Pedido pedido = super.realizarPedido(empleado,descuento);
+        sumarPuntos((int) pedido.calcularTotalDelPedido()*10);
+        return pedido;
     }
 }

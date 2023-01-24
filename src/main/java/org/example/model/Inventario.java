@@ -3,7 +3,7 @@ package org.example.model;
 import java.util.ArrayList;
 import java.util.List;
 
-class Inventario {
+public class Inventario {
     // Lista de productos en el inventario
     private List<Producto> productos;
 
