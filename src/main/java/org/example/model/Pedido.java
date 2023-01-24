@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Pedido{
     private Descuento descuento;
-    private Cliente cliente;
-    private Empleado empleado;
+    private final Cliente cliente;
+    private final Empleado empleado;
     private List<Producto> compra;
     //Constructor principal
     public Pedido(Cliente cliente, Empleado empleado, List<Producto> compra, Inventario inventario) throws Exception {
@@ -21,7 +21,7 @@ public class Pedido{
     }
 
     // Constructor secundario que recibe un objeto de tipo Descuento
-    public Pedido(Cliente cliente, Empleado empleado, List<Producto> compra, Descuento descuento, Inventario inventario) throws Exception {
+    public Pedido(Cliente cliente, Empleado empleado, List<Producto> compra, Inventario inventario, Descuento descuento) throws Exception {
         if (comprobarInventario(compra, inventario)) {
             this.cliente = cliente;
             this.empleado = empleado;
@@ -32,6 +32,9 @@ public class Pedido{
         }
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
 
     public double calcularTotalDelPedido(){
         Double precio=0.0;

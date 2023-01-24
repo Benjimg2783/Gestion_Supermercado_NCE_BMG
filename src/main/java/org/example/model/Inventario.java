@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Inventario {
     // Lista de productos en el inventario
-    private List<Producto> productos;
+    private final List<Producto> productos;
 
     public Inventario() {
         // Inicializando la lista de productos
-        productos = new ArrayList<Producto>();
+        productos = new ArrayList<>();
     }
 
     // Método para agregar un producto al inventario

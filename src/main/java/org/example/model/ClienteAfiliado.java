@@ -1,8 +1,6 @@
 package org.example.model;
 
-import org.example.interfaces.Descuento;
 
-import java.util.List;
 
 public class ClienteAfiliado extends Cliente {
 
@@ -15,10 +13,9 @@ public class ClienteAfiliado extends Cliente {
                            char sexo,
                            String direccion,
                            double dinero,
-                           List<Producto> listaCompra,
                            int numeroAfiliado,
                            int puntos) {
-        super(dni, nombre, edad, sexo, direccion, dinero, listaCompra);
+        super(dni, nombre, edad, sexo, direccion, dinero);
         this.numeroAfiliado = numeroAfiliado;
         this.puntos = puntos;
     }
@@ -71,12 +68,4 @@ public class ClienteAfiliado extends Cliente {
         }
     }
 
-
-    /**@Override
-    public Pedido realizarPedido(Empleado empleado, Descuento descuento){
-        Pedido pedido = super.realizarPedido(empleado,descuento);
-        sumarPuntos((int) pedido.calcularTotalDelPedido()*10);
-        return pedido;
-    }
-    **/
 }
