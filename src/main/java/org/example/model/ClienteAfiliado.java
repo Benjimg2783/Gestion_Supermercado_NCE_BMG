@@ -72,10 +72,11 @@ public class ClienteAfiliado extends Cliente {
     }
 
 
-    @Override
+    /**@Override
     public Pedido realizarPedido(Empleado empleado, Descuento descuento){
         Pedido pedido = super.realizarPedido(empleado,descuento);
         sumarPuntos((int) pedido.calcularTotalDelPedido()*10);
         return pedido;
     }
+    **/
 }

@@ -20,4 +20,5 @@ abstract class DescuentoPorCategoria implements Descuento {
         // Aplicando el descuento del porcentaje especificado
         return monto - (monto * porcentajeDescuento / 100);
     }
+
 }

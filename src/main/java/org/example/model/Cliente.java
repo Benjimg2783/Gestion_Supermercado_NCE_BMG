@@ -66,7 +66,7 @@ public class Cliente extends Persona {
         this.dinero += dineroExtraido;
     }
 
-    public void añadirProductoALaLista(Producto producto){
+    public void anadirProductoALaLista(Producto producto){
         this.listaCompra.add(producto);
     }
     public void eliminarProductoDeLaLista(Producto producto){
@@ -86,11 +86,12 @@ public class Cliente extends Persona {
      *
      * @return el pedido
      * **/
-    public Pedido realizarPedido(Empleado empleado, Descuento descuento){
+    /**public Pedido realizarPedido(Empleado empleado, Descuento descuento){
         if (descuento==null){
-            return new  Pedido(this,empleado,listaCompra);
+            return new Pedido(this,empleado,listaCompra);
         } else {
             return new Pedido(this, empleado, listaCompra, descuento);
         }
     }
+     **/
 }

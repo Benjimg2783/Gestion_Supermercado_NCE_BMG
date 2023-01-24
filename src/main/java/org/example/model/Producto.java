@@ -1,6 +1,6 @@
 package org.example.model;
 
-class Producto {
+public class Producto {
     // Atributo para almacenar el nombre del producto
     private String nombre;
     // Atributo para almacenar el precio de costo del producto
