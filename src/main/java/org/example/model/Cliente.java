@@ -1,8 +1,8 @@
-package org.example;
+package org.example.model;
 
 import java.util.List;
 
-public class Cliente extends Persona{
+public class Cliente extends Persona {
 
     // Atributos de la clase
     private double dinero;

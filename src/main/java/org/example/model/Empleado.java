@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 /**
  * Clase Empleado que hereda de la clase Persona, contiene información adicional de un empleado
@@ -10,12 +10,13 @@ public class Empleado extends Persona {
 
     /**
      * Constructor de la clase Empleado.
-     * @param dni Dni del empleado
-     * @param nombre Nombre del empleado
-     * @param edad Edad del empleado
-     * @param sexo Sexo del empleado
-     * @param direccion Direccion del empleado
-     * @param sueldo Sueldo del empleado
+     *
+     * @param dni        Dni del empleado
+     * @param nombre     Nombre del empleado
+     * @param edad       Edad del empleado
+     * @param sexo       Sexo del empleado
+     * @param direccion  Direccion del empleado
+     * @param sueldo     Sueldo del empleado
      * @param idEmpleado Id del empleado
      */
     public Empleado(String dni,
@@ -36,13 +37,16 @@ public class Empleado extends Persona {
 
     /**
      * Obtener el sueldo del empleado
+     *
      * @return sueldo
      */
     public double getSueldo() {
         return sueldo;
     }
+
     /**
      * Asignar el sueldo del empleado
+     *
      * @param sueldo Sueldo del empleado
      */
     public void setSueldo(double sueldo) {
@@ -51,6 +55,7 @@ public class Empleado extends Persona {
 
     /**
      * Obtener el id del empleado
+     *
      * @return idEmpleado
      */
     public int getIdEmpleado() {
@@ -59,6 +64,7 @@ public class Empleado extends Persona {
 
     /**
      * Asignar el id del empleado
+     *
      * @param idEmpleado Id del empleado
      */
     public void setIdEmpleado(int idEmpleado) {
@@ -67,6 +73,7 @@ public class Empleado extends Persona {
 
     /**
      * Método toString que devuelve información del objeto en forma de String
+     *
      * @return String
      */
     @Override
@@ -79,4 +86,5 @@ public class Empleado extends Persona {
                 ", sueldo = " + sueldo +
                 ", idEmpleado = " + idEmpleado;
     }
+}
 

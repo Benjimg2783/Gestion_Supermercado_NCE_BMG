@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 /**
  * Clase abstracta Persona que contiene información básica de una persona como su DNI, nombre, edad,
