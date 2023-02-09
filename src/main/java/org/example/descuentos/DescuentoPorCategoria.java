@@ -2,6 +2,7 @@ package org.example.descuentos;
 
 import org.example.interfaces.Descuento;
 
+
 abstract class DescuentoPorCategoria implements Descuento {
     // Porcentaje de descuento para clientes afiliados
     private final double porcentajeDescuento;
